@@ -127,7 +127,9 @@ public class TelaControleMinicurso extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
-        
+        IFAlterar ifAlterar = new IFAlterar();
+        this.jpConteudo.add(ifAlterar);
+        ifAlterar.setVisible(true);
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void bntBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBuscarActionPerformed
