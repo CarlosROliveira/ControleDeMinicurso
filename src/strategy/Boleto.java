@@ -2,12 +2,13 @@ package strategy;
 
 /**
  *
- * @author Gilson
+ * @author Gilson e Carlos
  */
-public class Boleto implements FormaDePagamento{
+public class Boleto extends FormaDePagamento{
 
-    public String formaPagamento() {
-        return "Forma de Pagamento: Boleto>> ";
+    public Boleto(){
+        this.nome = "Boleto";
+        this.promocao = new PromocaoBoleto();
     }
     
 }

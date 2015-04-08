@@ -48,7 +48,6 @@ public class IFBuscar extends javax.swing.JInternalFrame {
         jLabel22 = new javax.swing.JLabel();
         tfStatus = new javax.swing.JTextField();
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -67,18 +66,30 @@ public class IFBuscar extends javax.swing.JInternalFrame {
 
         jLabel17.setText("Título:");
 
+        tfTitulo3.setEditable(false);
+
         jLabel18.setText("Data de Inicio:");
+
+        tfDataInicio3.setEditable(false);
 
         jLabel19.setText("Duração:");
 
         jLabel20.setText("Nº Vagas:");
+
+        tfValor3.setEditable(false);
 
         jLabel21.setText("Valor:");
 
         btnCadastrar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/cancelar.png"))); // NOI18N
         btnCadastrar3.setText("Remover");
 
+        tfValor4.setEditable(false);
+
+        tfValor2.setEditable(false);
+
         jLabel22.setText("Status:");
+
+        tfStatus.setEditable(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -216,47 +227,21 @@ public class IFBuscar extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCadastrar;
-    private javax.swing.JButton btnCadastrar1;
     private javax.swing.JButton btnCadastrar3;
-    private javax.swing.JButton btnCancelar;
-    private javax.swing.JButton btnCancelar1;
     private javax.swing.JButton btnCancelar2;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField tfDataInicio;
-    private javax.swing.JTextField tfDataInicio1;
     private javax.swing.JTextField tfDataInicio3;
-    private javax.swing.JTextField tfDuracao;
-    private javax.swing.JTextField tfDuracao1;
-    private javax.swing.JTextField tfNVagas;
-    private javax.swing.JTextField tfNVagas1;
     private javax.swing.JTextField tfStatus;
-    private javax.swing.JTextField tfTitulo;
-    private javax.swing.JTextField tfTitulo1;
     private javax.swing.JTextField tfTitulo3;
-    private javax.swing.JTextField tfValor;
-    private javax.swing.JTextField tfValor1;
     private javax.swing.JTextField tfValor2;
     private javax.swing.JTextField tfValor3;
     private javax.swing.JTextField tfValor4;

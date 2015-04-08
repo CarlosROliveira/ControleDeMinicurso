@@ -93,7 +93,7 @@ public class TelaControleMinicurso extends javax.swing.JFrame {
         );
         jpConteudoLayout.setVerticalGroup(
             jpConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 306, Short.MAX_VALUE)
+            .addGap(0, 407, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

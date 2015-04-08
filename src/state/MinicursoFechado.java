@@ -16,23 +16,23 @@ public class MinicursoFechado implements MinicursoEstado{
     }
 
     public String disponibilizar() {
-        return "Minicurso n„o pode ficar disponÌvel";
+        return "Minicurso n√£o pode ficar dispon√≠vel";
     }
 
     public String executar() {
-        return "Minicurso n„o pode entrar em execuÁ„o";
+        return "Minicurso n√£o pode entrar em execu√ß√£o";
     }
 
     public String fechar() {
-        return "Minicurso j· fechado";
+        return "Minicurso j√° fechado";
     }
 
     public String cancelar() {
-        return "Minicurso n„o pode ser cancelado";
+        return "Minicurso n√£o pode ser cancelado";
     }
 
     public String adiar() {
-        return "Minicurso n„o pode ser adiado";
+        return "Minicurso nÔøΩo pode ser adiado";
     }
     
 }

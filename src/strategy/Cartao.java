@@ -4,10 +4,11 @@ package strategy;
  *
  * @author Gilson
  */
-public class Cartao implements FormaDePagamento{
+public class Cartao extends FormaDePagamento{
 
-    public String formaPagamento() {
-        return "Forma de Pagamento: Cart„o>> ";
+    public Cartao(){
+        this.nome="Cart√£o";
+        this.promocao = new PromocaoCartao();
     }
     
 }

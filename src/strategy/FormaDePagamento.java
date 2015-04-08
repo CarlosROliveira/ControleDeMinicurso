@@ -4,8 +4,21 @@ package strategy;
  *
  * @author Gilson
  */
-public interface FormaDePagamento {
+public abstract class FormaDePagamento {
     
-    public String formaPagamento();
+    protected Promocao promocao;
+    protected String nome;
+    
+    public int desconto() {
+        return promocao.obterDesconto();
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public String getPromocao() {
+        return promocao.obterPromocao();
+    }
     
 }

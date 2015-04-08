@@ -12,7 +12,7 @@ public class PromocaoBoleto implements Promocao{
 
 
     public String obterPromocao() {
-        return "Promoção Boleto";
+        return "PromoÃ§Ã£o Boleto";
     }
     
 }

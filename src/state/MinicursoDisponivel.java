@@ -12,19 +12,19 @@ package state;
 public class MinicursoDisponivel implements MinicursoEstado{
 
     public String getEstado() {
-        return "Minicurso Disponível";
+        return "Minicurso DisponÃ­vel";
     }
 
     public String disponibilizar() {
-        return "Minicurso já disponível";
+        return "Minicurso jÃ¡ disponÃ­vel";
     }
 
     public String executar() {
-        return "Minicurso em execução";
+        return "Minicurso em execuï¿½ï¿½o";
     }
 
     public String fechar() {
-        return "Minicurso não pode ser fechado";
+        return "Minicurso nï¿½o pode ser fechado";
     }
 
     public String cancelar() {

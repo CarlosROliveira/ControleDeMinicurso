@@ -12,15 +12,15 @@ package state;
 public class MinicursoEmExecucao implements MinicursoEstado{
     
     public String getEstado() {
-        return "Minicurso em Execução";
+        return "Minicurso em ExecuÃ§Ã£o";
     }
 
     public String disponibilizar() {
-        return "Minicurso não pode ficar disponível";
+        return "Minicurso nÃ£o pode ficar disponÃ­vel";
     }
 
     public String executar() {
-        return "Minicurso já em execução";
+        return "Minicurso jÃ¡ em execuÃ§Ã£o";
     }
 
     public String fechar() {
@@ -28,11 +28,11 @@ public class MinicursoEmExecucao implements MinicursoEstado{
     }
 
     public String cancelar() {
-        return "Minicurso não pode ser cancelado";
+        return "Minicurso nï¿½o pode ser cancelado";
     }
 
     public String adiar() {
-        return "Minicurso não pode ser adiado adiado";
+        return "Minicurso nï¿½o pode ser adiado adiado";
     }
     
 }

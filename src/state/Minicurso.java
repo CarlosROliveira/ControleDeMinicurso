@@ -11,7 +11,7 @@ public class Minicurso {
 
     private String titulo;
     private String dataInicio;
-    private String duração;
+    private String duracao;
     private double valor;
     private MinicursoEstado minicursoEstado;
     private FormaDePagamento formaDePagamento;
@@ -37,12 +37,12 @@ public class Minicurso {
         this.dataInicio = dataInicio;
     }
 
-    public String getDuração() {
-        return duração;
+    public String getDuracao() {
+        return duracao;
     }
 
-    public void setDuração(String duração) {
-        this.duração = duração;
+    public void setDuracao(String duracao) {
+        this.duracao = duracao;
     }
 
     public MinicursoEstado getMinicursoEstado() {

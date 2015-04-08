@@ -16,15 +16,15 @@ public class MinicursoAdiado {
     }
 
     public String disponibilizar() {
-        return "Minicurso disponível";
+        return "Minicurso disponÃ­vel";
     }
 
     public String executar() {
-        return "Minicurso não pode entrar em execução";
+        return "Minicurso nÃ£o pode entrar em execuÃ§Ã£o";
     }
 
     public String fechar() {
-        return "Minicurso não pode ser fechado";
+        return "Minicurso nÃ£o pode ser fechado";
     }
 
     public String cancelar() {
@@ -32,7 +32,7 @@ public class MinicursoAdiado {
     }
 
     public String adiar() {
-        return "Minicurso já adiado";
+        return "Minicurso jï¿½ adiado";
     }
     
 }

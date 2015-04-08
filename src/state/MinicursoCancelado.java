@@ -16,23 +16,23 @@ public class MinicursoCancelado implements MinicursoEstado{
     }
 
     public String disponibilizar() {
-        return "Minicurso não pode ficar disponível";
+        return "Minicurso nÃ£o pode ficar disponï¿½vel";
     }
 
     public String executar() {
-        return "Minicurso não pode entrar em execução";
+        return "Minicurso nï¿½o pode entrar em execuï¿½ï¿½o";
     }
 
     public String fechar() {
-        return "Minicurso não pode ser fechado";
+        return "Minicurso nï¿½o pode ser fechado";
     }
 
     public String cancelar() {
-        return "Minicurso já cancelado";
+        return "Minicurso jï¿½ cancelado";
     }
 
     public String adiar() {
-        return "Minicurso não pode ser adiado";
+        return "Minicurso nï¿½o pode ser adiado";
     }
     
 }
