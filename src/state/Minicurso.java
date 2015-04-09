@@ -14,10 +14,8 @@ public class Minicurso {
     private String duracao;
     private double valor;
     private MinicursoEstado minicursoEstado;
-    private FormaDePagamento formaDePagamento;
-    private Promocao promocao;
-    
-    public Minicurso(){
+    private int vagasDisp;
+    public Minicurso() {
         this.minicursoEstado = new MinicursoDisponivel();
     }
 
@@ -27,6 +25,22 @@ public class Minicurso {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public int getVagasDisp() {
+        return vagasDisp;
+    }
+
+    public void setVagasDisp(int vagasDisp) {
+        this.vagasDisp = vagasDisp;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     public String getDataInicio() {
@@ -52,5 +66,5 @@ public class Minicurso {
     public void setMinicursoEstado(MinicursoEstado minicursoEstado) {
         this.minicursoEstado = minicursoEstado;
     }
-    
+
 }
