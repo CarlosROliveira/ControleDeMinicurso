@@ -17,7 +17,7 @@
         <style type="text/css">
             form fieldset{
                 width: 400px;
-                height:280px;
+                height:340px;
                 margin: 0 auto;
             }    
             form label{
@@ -46,10 +46,12 @@
         <form name="frm-cad-minicurso" method="post" id="frm-cadastro" action="frontcontroller?action=GravarMiniCurso" >
             <fieldset>
                 <legend>Mundado estado do Minicurso</legend>
+                <label>ID:</label>
+                <input type="text" name="id" value="<%=minicursos.get(id).getId()%>" readonly/>
                 <label>Título</label>
-                <input type="text" name="titulo" value="<%=minicursos.get(id).getTitulo()%>"/>
+                <input type="text" name="titulo" value="<%=minicursos.get(id).getTitulo()%>" readonly/>
                 <label>Estado atual:</label>
-                <input type="text" name="status" value="<%=minicursos.get(id).getMinicursoEstado().getEstado()%>"/>
+                <input type="text" name="status" value="<%=minicursos.get(id).getMinicursoEstado().getEstado()%>" readonly/>
                 <label>Opções</label>
                 <input type="radio" name="estado" value="adiar">Adiar  <br>
                 <input type="radio" name="estado" value="cancelar">Cancelar  <br>

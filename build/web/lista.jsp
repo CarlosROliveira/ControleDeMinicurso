@@ -22,7 +22,6 @@
             minicursos = (ArrayList<Minicurso>) request.getAttribute("minicursos");
         %>
         
-        <label><%=minicursos.size()%></label>
         <table border="1">
             <tr>
                 <td>ID</td>
