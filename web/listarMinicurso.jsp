@@ -1,7 +1,7 @@
 <%-- 
     Document   : editar
     Created on : 09/04/2015, 16:13:18
-    Author     : Junior
+    Author     : Admin
 --%>
 
 <%@page import="java.util.ArrayList"%>
@@ -46,7 +46,10 @@
                 <td><%= minicurso.getMinicursoEstado()%></td>
                 <td><%= minicurso.getVagasDisp()%></td>
                 <td>
-                    <a href="mudar.jsp?minicurso=<%= minicurso.getId() %>">Mudar Estado</a>
+                    <a href="alterarEstado.jsp?minicurso=<%= minicurso.getId() %>">Mudar Estado</a>
+                </td>
+                <td>
+                    <a href="adicionarparticipante.jsp?minicurso=<%= minicurso.getId() %>">Participar</a>
                 </td>
             </tr>
             <%
@@ -55,6 +58,6 @@
             %>
 
         </table>
-        <a href="frontcontroller?action=FormularioMiniCurso" >Cadastrar novo Minicurso</a>
+            <a href="frontcontroller?action=FormularioMiniCurso" >Cadastrar novo Minicurso</a><br>
     </body>
 </html>

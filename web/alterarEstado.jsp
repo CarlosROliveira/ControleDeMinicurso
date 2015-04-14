@@ -1,7 +1,7 @@
 <%-- 
     Document   : mudar
     Created on : 09/04/2015, 19:07:43
-    Author     : Junior
+    Author     : Admin
 --%>
 
 <%@page import="persistence.MinicursoDAO"%>
@@ -43,9 +43,9 @@
             
         %>           
 
-        <form name="frm-cad-minicurso" method="post" id="frm-cadastro" action="frontcontroller?action=GravarMiniCurso" >
+        <form name="frm-cad-minicurso" method="post" id="frm-cadastro" action="frontcontroller?action=AlterarMiniCurso" >
             <fieldset>
-                <legend>Mundado estado do Minicurso</legend>
+                <legend>Mundando estado do Minicurso</legend>
                 <label>ID:</label>
                 <input type="text" name="id" value="<%=minicursos.get(id).getId()%>" readonly/>
                 <label>Título</label>
@@ -53,14 +53,27 @@
                 <label>Estado atual:</label>
                 <input type="text" name="status" value="<%=minicursos.get(id).getMinicursoEstado().getEstado()%>" readonly/>
                 <label>Opções</label>
-                <input type="radio" name="estado" value="adiar">Adiar  <br>
-                <input type="radio" name="estado" value="cancelar">Cancelar  <br>
-                <input type="radio" name="estado" value="disponibilizar">Disponibilizar  <br>
-                <input type="radio" name="estado" value="iniciar">Iniciar  <br>
-                <input type="radio" name="estado" value="fechar">Fechar  <br>
-                <input type="submit" value="Mudar Estado" id="btn"/>
+                <input type="radio" name="estado" value="Minicurso Adiado">Adiar  <br>
+                <input type="radio" name="estado" value="Minicurso Cancelado">Cancelar  <br>
+                <input type="radio" name="estado" value="Minicurso Disponivel">Disponibilizar  <br>
+                <input type="radio" name="estado" value="Minicurso em Execucao">Iniciar  <br>
+                <input type="radio" name="estado" value="Minicurso Fechado">Fechar  <br>
+                <input type="submit" value="Mudar Estado" id="btn" onClick="getEstadoSelecionado()"/>
             </fieldset> 
         </form>
+                <script>
+                    function getEstadoSelecionado(){
+                        var listaMarcados = document.getElementsByName("estado");
+                        for(loop = 0 ; loop < listaMarcados.length; loop++){
+                            var item = listaMarcados[loop];
+                            if(item.checked){
+                                var estado = item.value;
+                                alert(estado);
+                                return estado;
+                            }
+                        }
+                    }
+                </script>
                 
         <%
                     

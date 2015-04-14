@@ -14,10 +14,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Gilson
  */
-public class FormularioMiniCursoAction implements Action{
+public class FormularioParticipanteAction implements Action{
 
     public void execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.sendRedirect("adicionar.jsp");
+        response.sendRedirect("adicionarparticipante.jsp");
     }
     
 }

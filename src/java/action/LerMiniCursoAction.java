@@ -26,7 +26,7 @@ public class LerMiniCursoAction implements Action{
        List<Minicurso> minicursos = MinicursoDAO.getInstance().getAll();
        request.setAttribute("minicursos", minicursos);
         try {
-            request.getRequestDispatcher("lista.jsp").forward(request, response);
+            request.getRequestDispatcher("listarMinicurso.jsp").forward(request, response);
         } catch (ServletException ex) {
             Logger.getLogger(LerMiniCursoAction.class.getName()).log(Level.SEVERE, null, ex);
         }

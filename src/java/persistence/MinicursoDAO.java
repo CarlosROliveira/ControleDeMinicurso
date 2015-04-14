@@ -11,12 +11,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Minicurso;
-import state.MinicursoAdiado;
-import state.MinicursoCancelado;
-import state.MinicursoDisponivel;
-import state.MinicursoEmExecucao;
 import state.MinicursoEstado;
-import state.MinicursoFechado;
 
 /**
  *
@@ -90,6 +85,44 @@ public class MinicursoDAO {
                 closeResources(conn,ps);
         }
         
+    }
+    
+    public void update(int id, String estadoNovo) throws SQLException, ClassNotFoundException{
+        Connection conn = null;
+        PreparedStatement ps = null;
+        
+        try{
+            conn = DatabaseLocator.getInstance().getConnection();
+            String sql = "update minicurso set status ='"+estadoNovo+"' where id="+id;
+            ps = conn.prepareStatement(sql);
+            ps.execute();
+          
+        } catch(SQLException e) {
+            throw e;
+        } finally {
+            closeResources(conn,ps);
+        }
+    }
+    
+    public void updateVagas(int id) throws SQLException, ClassNotFoundException{
+        Connection conn = null;
+        PreparedStatement ps = null;
+        
+        try{
+            conn = DatabaseLocator.getInstance().getConnection();
+            int numVagas = Integer.parseInt("select vagasDisp from minicurso where id="+id);
+            ps = conn.prepareStatement(String.valueOf(numVagas));
+            ps.execute();
+            
+            String sql = "update minicurso set vagasDisp ="+(numVagas--)+" where id="+id;
+            ps = conn.prepareStatement(sql);
+            ps.execute();
+          
+        } catch(SQLException e) {
+            throw e;
+        } finally {
+            closeResources(conn,ps);
+        }
     }
     
     public void closeResources(Connection conn, Statement st){

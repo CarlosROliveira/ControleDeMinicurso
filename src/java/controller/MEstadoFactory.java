@@ -16,14 +16,15 @@ public class MEstadoFactory {
     public static MinicursoEstado obtemEstado(String estado){
         if(estado.equals("Minicurso Adiado"))
             return new MinicursoAdiado();
-        else if(estado.equals("Minicurso Cancelado"))
+        if(estado.equals("Minicurso Cancelado"))
            return new MinicursoCancelado();
-        else if(estado.equals("Minicurso Disponível"))
+        if(estado.equals("Minicurso Disponivel"))
            return new MinicursoDisponivel();
-        else if(estado.equals("Minicurso em Execução"))
+        if(estado.equals("Minicurso em Execucao"))
            return new MinicursoEmExecucao();
-        else
+        if(estado.equals("Minicurso Fechado"))
            return new MinicursoFechado();
+        return null;
     }
     
 }

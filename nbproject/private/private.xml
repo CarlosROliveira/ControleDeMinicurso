@@ -3,10 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/web/lista.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/controller/FrontController.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/action/LerMiniCursoAction.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/action/GravarMiniCursoAction.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/web/mudar.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/controller/ActionFactory.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/web/alterarEstado.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/strategy/FormaDePagamento.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/web/index.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/controller/MEstadoFactory.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/action/AlterarMiniCursoAction.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/state/MinicursoEstado.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/persistence/MinicursoDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/state/MinicursoAdiado.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/ControleDeMinicurso/src/java/template/Participante.java</file>
         </group>
     </open-files>
 </project-private>

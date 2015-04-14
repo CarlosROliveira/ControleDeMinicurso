@@ -4,6 +4,9 @@
     Author     : Admin
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="persistence.MinicursoDAO"%>
+<%@page import="model.Minicurso"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -31,21 +34,23 @@
         </style>
     </head>
     <body>
+        <%
+            int id=Integer.valueOf(request.getParameter("minicurso"));
+            
+            List<Minicurso> minicursos = MinicursoDAO.getInstance().getAll();
+            
+        %>
         
-        
-        <form name="frm-cad-minicurso" method="post" id="frm-cadastro" action="frontcontroller?action=GravarMiniCurso" >
+        <form name="frm-cad-minicurso" method="post" id="frm-cadastro" action="frontcontroller?action=CadastrarParticipante" >
             <fieldset>
-            <legend>Adicionar Minicurso</legend>
-            <label>Título</label>
-            <input type="text" name="titulo" value=""/>
-            <label>Data de Inicio</label>
-            <input type="text" name="dataInicio" value=""/>
-            <label>Duração</label>
-            <input type="text" name="duracao" value=""/>
-            <label>Valor</label>
-            <input type="text" name="valor" value=""/>
-            <label>Vagas disponíveis</label>
-            <input type="text" name="vagasDisp" value=""/>
+            <legend>Adicionar Participante</legend>
+            <label>ID:</label>
+                <input type="text" name="id" value="<%=minicursos.get(id).getId()%>" readonly/>
+            <label>Nome</label>
+            <input type="text" name="nome" value=""/>
+            <label>Forma de pagamento</label>
+            <input type="radio" name="forma" value="Cartao">Cartão  <br>
+            <input type="radio" name="forma" value="Boleto">Boleto  <br>
             <input type="submit" value="Salvar" id="btn"/>
             </fieldset> 
         </form>
