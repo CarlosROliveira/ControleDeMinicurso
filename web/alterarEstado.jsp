@@ -37,7 +37,7 @@
     <body>
         
         <%
-            int id=Integer.valueOf(request.getParameter("minicurso"));
+            int id=Integer.valueOf(request.getParameter("minicurso"))-1;
             
             List<Minicurso> minicursos = MinicursoDAO.getInstance().getAll();
             
@@ -56,7 +56,7 @@
                 <input type="radio" name="estado" value="Minicurso Adiado">Adiar  <br>
                 <input type="radio" name="estado" value="Minicurso Cancelado">Cancelar  <br>
                 <input type="radio" name="estado" value="Minicurso Disponivel">Disponibilizar  <br>
-                <input type="radio" name="estado" value="Minicurso em Execucao">Iniciar  <br>
+                <input type="radio" name="estado" value="Minicurso Em Execucao">Iniciar  <br>
                 <input type="radio" name="estado" value="Minicurso Fechado">Fechar  <br>
                 <input type="submit" value="Mudar Estado" id="btn" onClick="getEstadoSelecionado()"/>
             </fieldset> 

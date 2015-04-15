@@ -12,7 +12,7 @@ package state;
 public class MinicursoEmExecucao implements MinicursoEstado{
     
     public String getEstado() {
-        return "Minicurso em Execução";
+        return "Minicurso Em Execução";
     }
 
     public String disponibilizar() {

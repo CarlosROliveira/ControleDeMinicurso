@@ -14,17 +14,19 @@ import state.MinicursoFechado;
 public class MEstadoFactory {
     
     public static MinicursoEstado obtemEstado(String estado){
-        if(estado.equals("Minicurso Adiado"))
-            return new MinicursoAdiado();
-        if(estado.equals("Minicurso Cancelado"))
-           return new MinicursoCancelado();
-        if(estado.equals("Minicurso Disponivel"))
-           return new MinicursoDisponivel();
-        if(estado.equals("Minicurso em Execucao"))
-           return new MinicursoEmExecucao();
-        if(estado.equals("Minicurso Fechado"))
-           return new MinicursoFechado();
-        return null;
+        MinicursoEstado minicursoEstado = null;
+        String nomeClasse = "state." + estado.replaceAll(" ", "").replaceAll("í", "i").replaceAll("ç", "c").replaceAll("ã", "a");
+        Class classe = null;
+        Object object = null;
+        try {
+            classe = Class.forName(nomeClasse);
+            object = classe.newInstance();
+        } catch (Exception ex) {
+            return null;
+        }
+        if(!(object instanceof MinicursoEstado)) return null;
+        minicursoEstado = (MinicursoEstado) object;
+        return minicursoEstado;
     }
     
 }

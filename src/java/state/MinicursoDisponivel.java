@@ -20,11 +20,11 @@ public class MinicursoDisponivel implements MinicursoEstado{
     }
 
     public String executar() {
-        return "Minicurso em execu��o";
+        return "Minicurso em execução";
     }
 
     public String fechar() {
-        return "Minicurso n�o pode ser fechado";
+        return "Minicurso não pode ser fechado";
     }
 
     public String cancelar() {
