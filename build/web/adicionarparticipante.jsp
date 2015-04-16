@@ -7,7 +7,7 @@
 <%@page import="java.util.List"%>
 <%@page import="persistence.MinicursoDAO"%>
 <%@page import="model.Minicurso"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -49,7 +49,7 @@
             <label>Nome</label>
             <input type="text" name="nome" value=""/><br>
             <label>Forma de pagamento:</label>
-            <input type="radio" name="forma" value="Cartao">Cart√£o  <br>
+            <input type="radio" name="forma" value="Cartao">Cart„o  <br>
             <input type="radio" name="forma" value="Boleto">Boleto  <br><br>
             <input type="submit" value="Salvar" id="btn"/>
             </fieldset> 

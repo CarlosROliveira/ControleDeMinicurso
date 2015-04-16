@@ -1,11 +1,11 @@
 package action;
 
 import controller.Action;
+import controller.ExibeMensagem;
 import controller.MEstadoFactory;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpServletResponse;
@@ -27,15 +27,15 @@ public class AlterarMiniCursoAction implements Action {
         String estadoNovo = request.getParameter("estado");
   
         MinicursoEstado minicursoEstado = MEstadoFactory.obtemEstado(estadoAtual);
+        String retornoTroca = chamaMetodo(minicursoEstado, estadoNovo);
+        MinicursoEstado minicursoEstadoNovo = MEstadoFactory.obtemEstado(retornoTroca);
         
         try {
-            MinicursoDAO.getInstance().update(id, estadoNovo);
-            //MinicursoDAO.getInstance().update(id, chamaMetodo(minicursoEstado,estadoNovo));
+            MinicursoDAO.getInstance().update(id, minicursoEstadoNovo.getEstado());
             response.sendRedirect("frontcontroller?action=LerMiniCurso");
-        } catch (SQLException ex) {
-            Logger.getLogger(GravarMiniCursoAction.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(GravarMiniCursoAction.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            ExibeMensagem.setMensagem(retornoTroca);
+            response.sendRedirect("frontcontroller?action=ErroTrocarEstado");
         }
     }
     

@@ -16,7 +16,7 @@ public class MinicursoAdiado implements MinicursoEstado{
     }
 
     public String disponibilizar() {
-        return "Minicurso disponível";
+        return "Minicurso Disponível";
     }
 
     public String executar() {
@@ -28,7 +28,7 @@ public class MinicursoAdiado implements MinicursoEstado{
     }
 
     public String cancelar() {
-        return "Minicurso cancelado";
+        return "Minicurso Cancelado";
     }
 
     public String adiar() {

@@ -24,15 +24,15 @@ public class MinicursoEmExecucao implements MinicursoEstado{
     }
 
     public String fechar() {
-        return "Minicurso fechado";
+        return "Minicurso Fechado";
     }
 
     public String cancelar() {
-        return "Minicurso n�o pode ser cancelado";
+        return "Minicurso não pode ser cancelado";
     }
 
     public String adiar() {
-        return "Minicurso n�o pode ser adiado adiado";
+        return "Minicurso não pode ser adiado adiado";
     }
     public String toString(){
         return this.getEstado();

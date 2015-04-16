@@ -16,7 +16,6 @@ public class FrontController extends HttpServlet {
 
         Action actionObject = null;
         String action = request.getParameter("action");
-        System.out.println(action);
         if (action == null || action.equals("") || action.equals("index")) {
             response.sendRedirect("index.jsp");
         } else {

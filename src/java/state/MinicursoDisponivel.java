@@ -20,7 +20,7 @@ public class MinicursoDisponivel implements MinicursoEstado{
     }
 
     public String executar() {
-        return "Minicurso em execução";
+        return "Minicurso Em Execução";
     }
 
     public String fechar() {
@@ -28,11 +28,11 @@ public class MinicursoDisponivel implements MinicursoEstado{
     }
 
     public String cancelar() {
-        return "Minicurso cancelado";
+        return "Minicurso Cancelado";
     }
 
     public String adiar() {
-        return "Minicurso adiado";
+        return "Minicurso Adiado";
     }
     public String toString(){
         return this.getEstado();

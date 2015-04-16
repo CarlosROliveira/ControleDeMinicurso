@@ -1,11 +1,6 @@
 package controller;
 
-import state.MinicursoAdiado;
-import state.MinicursoCancelado;
-import state.MinicursoDisponivel;
-import state.MinicursoEmExecucao;
 import state.MinicursoEstado;
-import state.MinicursoFechado;
 
 /**
  *

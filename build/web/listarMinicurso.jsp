@@ -8,11 +8,11 @@
 <%@page import="java.util.List"%>
 <%@page import="model.Minicurso"%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Controle de Minicurso</title>
     </head>
     <body>
@@ -27,11 +27,11 @@
                 <td>ID</td>
                 <td>Titulo</td>
                 <td>Data de Inicio</td>
-                <td>DuraÃ§Ã£o</td>
+                <td>Duração</td>
                 <td>Valor</td>
                 <td>Status</td>
                 <td>Vagas disponiveis</td>
-                <td>OpÃ§Ã£o</td>
+                <td>Opção</td>
             </tr>
             <%
                 if (minicursos.size() > 0) {

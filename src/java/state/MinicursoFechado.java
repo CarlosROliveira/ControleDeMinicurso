@@ -32,7 +32,7 @@ public class MinicursoFechado implements MinicursoEstado{
     }
 
     public String adiar() {
-        return "Minicurso n�o pode ser adiado";
+        return "Minicurso não pode ser adiado";
     }
     public String toString(){
         return this.getEstado();

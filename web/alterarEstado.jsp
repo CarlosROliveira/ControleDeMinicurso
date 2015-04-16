@@ -8,11 +8,11 @@
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.Minicurso"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Controle Minicurso</title>
         <style type="text/css">
             form fieldset{
@@ -48,16 +48,16 @@
                 <legend>Mundando estado do Minicurso</legend>
                 <label>ID:</label>
                 <input type="text" name="id" value="<%=minicursos.get(id).getId()%>" readonly/>
-                <label>TÃ­tulo</label>
+                <label>Título</label>
                 <input type="text" name="titulo" value="<%=minicursos.get(id).getTitulo()%>" readonly/>
                 <label>Estado atual:</label>
                 <input type="text" name="status" value="<%=minicursos.get(id).getMinicursoEstado().getEstado()%>" readonly/>
-                <label>OpÃ§Ãµes</label>
-                <input type="radio" name="estado" value="Minicurso Adiado">Adiar  <br>
-                <input type="radio" name="estado" value="Minicurso Cancelado">Cancelar  <br>
-                <input type="radio" name="estado" value="Minicurso Disponivel">Disponibilizar  <br>
-                <input type="radio" name="estado" value="Minicurso Em Execucao">Iniciar  <br>
-                <input type="radio" name="estado" value="Minicurso Fechado">Fechar  <br>
+                <label>Opções</label>
+                <input type="radio" name="estado" value="adiar">Adiar  <br>
+                <input type="radio" name="estado" value="cancelar">Cancelar  <br>
+                <input type="radio" name="estado" value="disponibilizar">Disponibilizar  <br>
+                <input type="radio" name="estado" value="executar">Iniciar  <br>
+                <input type="radio" name="estado" value="fechar">Fechar  <br>
                 <input type="submit" value="Mudar Estado" id="btn" onClick="getEstadoSelecionado()"/>
             </fieldset> 
         </form>
