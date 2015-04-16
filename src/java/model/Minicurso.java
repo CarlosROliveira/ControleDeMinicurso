@@ -2,12 +2,14 @@ package model;
 
 import state.MinicursoDisponivel;
 import state.MinicursoEstado;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  *
  * @author Gilson
  */
-public class Minicurso {
+public class Minicurso extends Observable {
     private int id;
     private String titulo;
     private String dataInicio;
@@ -74,6 +76,8 @@ public class Minicurso {
 
     public void setMinicursoEstado(MinicursoEstado minicursoEstado) {
         this.minicursoEstado = minicursoEstado;
+        setChanged();
+        notifyObservers();
     }
 
 }
