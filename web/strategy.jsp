@@ -1,19 +1,20 @@
 <%-- 
-    Document   : errotrocarestador
-    Created on : 16/04/2015, 17:17:28
+    Document   : Strategy
+    Created on : 16/04/2015, 18:52:51
     Author     : Admin
 --%>
 
-<%@page import="controller.ExibeMensagem"%>
+<%@page import="controller.ExibeStrategy"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Erro ao Trocar Estado</title>
+        <title>Strategy</title>
     </head>
     <body>
-        <h1><%= ExibeMensagem.getMensagem()%></h1>
+        <h1><%= ExibeStrategy.getFormaDePagamento().getNome()+ " "+
+                ExibeStrategy.getFormaDePagamento().getPromocao() %></h1>
         <a href="frontcontroller?action=LerMiniCurso" >Voltar - Listar Minicursos</a>
     </body>
 </html>

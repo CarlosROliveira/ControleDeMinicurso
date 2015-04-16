@@ -53,7 +53,7 @@
                 <label>Estado atual:</label>
                 <input type="text" name="status" value="<%=minicursos.get(id).getMinicursoEstado().getEstado()%>" readonly/>
                 <label>Opções</label>
-                <input type="radio" name="estado" value="adiar">Adiar  <br>
+                <input type="radio" name="estado" value="adiar" checked>Adiar  <br>
                 <input type="radio" name="estado" value="cancelar">Cancelar  <br>
                 <input type="radio" name="estado" value="disponibilizar">Disponibilizar  <br>
                 <input type="radio" name="estado" value="executar">Iniciar  <br>
@@ -68,7 +68,6 @@
                             var item = listaMarcados[loop];
                             if(item.checked){
                                 var estado = item.value;
-                                alert(estado);
                                 return estado;
                             }
                         }

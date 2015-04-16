@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Minicurso;
-import state.MinicursoEstado;
 
 /**
  *
@@ -108,14 +107,24 @@ public class MinicursoDAO {
         Connection conn = null;
         PreparedStatement ps = null;
         
+        ResultSet rs = null;
+        
         try{
             conn = DatabaseLocator.getInstance().getConnection();
-            int numVagas = Integer.parseInt("select vagasDisp from minicurso where id="+id);
-            ps = conn.prepareStatement(String.valueOf(numVagas));
-            ps.execute();
-            
-            String sql = "update minicurso set vagasDisp ="+(numVagas--)+" where id="+id;
+            String sql = "select * from minicurso where id="+id;
             ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            
+            int numVagas=0;
+            
+            while(rs.next()){
+                numVagas = rs.getInt(7);
+            }
+            
+            numVagas -= 1;
+            
+            String sql2 = "update minicurso set vagasDisp ="+(numVagas)+" where id="+id;
+            ps = conn.prepareStatement(sql2);
             ps.execute();
           
         } catch(SQLException e) {

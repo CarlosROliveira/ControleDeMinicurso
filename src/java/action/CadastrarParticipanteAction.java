@@ -6,6 +6,8 @@
 package action;
 
 import controller.Action;
+import controller.ExibeStrategy;
+import controller.StrategyFactory;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -22,11 +24,13 @@ public class CadastrarParticipanteAction implements Action{
 
     public void execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        String formaPagamento = request.getParameter("formapagamento");
+        String formaPagamento = request.getParameter("forma");
+        
+        ExibeStrategy.setFormaDePagamento(StrategyFactory.obtemFormaPagamento(formaPagamento));
   
         try {
             MinicursoDAO.getInstance().updateVagas(id);
-            response.sendRedirect("frontcontroller?action=index");
+            response.sendRedirect("frontcontroller?action=Strategy");
         } catch (SQLException ex) {
             Logger.getLogger(CadastrarParticipanteAction.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {

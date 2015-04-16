@@ -35,7 +35,7 @@
     </head>
     <body>
         <%
-            int id=Integer.valueOf(request.getParameter("minicurso"));
+            int id=Integer.valueOf(request.getParameter("minicurso"))-1;
             
             List<Minicurso> minicursos = MinicursoDAO.getInstance().getAll();
             
@@ -51,9 +51,22 @@
             <label>Forma de pagamento:</label>
             <input type="radio" name="forma" value="Cartao">Cartão  <br>
             <input type="radio" name="forma" value="Boleto">Boleto  <br><br>
-            <input type="submit" value="Salvar" id="btn"/>
+            <input type="submit" value="Salvar" id="btn" onClick="getEstadoSelecionado()"/>
             </fieldset> 
         </form>
+            
+        <script>
+            function getEstadoSelecionado(){
+                var listaMarcados = document.getElementsByName("estado");
+                for(loop = 0 ; loop < listaMarcados.length; loop++){
+                    var item = listaMarcados[loop];
+                    if(item.checked){
+                        var estado = item.value;
+                        return estado;
+                    }
+                }
+            }
+        </script>
            
     </body>
 </html>
