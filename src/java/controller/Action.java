@@ -6,7 +6,6 @@
 package controller;
 
 import java.io.IOException;
-import model.Minicurso;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

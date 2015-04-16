@@ -15,14 +15,14 @@
         <title>JSP Page</title>
         <style type="text/css">
             form fieldset{
-                width: 400px;
-                height:400px;
+                width: 360px;
+                height:260px;
                 margin: 0 auto;
             }    
             form label{
                 display: block;
             }
-            form input{
+            form input[type=text]{
                 width: 350px;
                 margin: 5px 0;
                 display: block;
@@ -47,10 +47,10 @@
             <label>ID:</label>
                 <input type="text" name="id" value="<%=minicursos.get(id).getId()%>" readonly/>
             <label>Nome</label>
-            <input type="text" name="nome" value=""/>
-            <label>Forma de pagamento</label>
+            <input type="text" name="nome" value=""/><br>
+            <label>Forma de pagamento:</label>
             <input type="radio" name="forma" value="Cartao">Cartão  <br>
-            <input type="radio" name="forma" value="Boleto">Boleto  <br>
+            <input type="radio" name="forma" value="Boleto">Boleto  <br><br>
             <input type="submit" value="Salvar" id="btn"/>
             </fieldset> 
         </form>
