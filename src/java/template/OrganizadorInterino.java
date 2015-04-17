@@ -4,14 +4,15 @@
  */
 package template;
 
+
 /**
  *
  * @author Marco
  */
-public class ParticipanteConvidado extends Participante {
-    
-    public String getOrigem() {
-        return "Central ";
+public class OrganizadorInterino extends Organizador {
+
+    public String getCargo() {
+        return "Diretor ";
     }
     
 }

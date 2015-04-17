@@ -1,19 +1,22 @@
-package padraoobserver;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package observer;
 
-import controller.ExibeMensagem;
-import controller.ExibeMensagemObserver;
 import java.util.Observable;
 import java.util.Observer;
 import model.Minicurso;
 
 /**
  *
- * @author Marco
+ * @author Gilson
  */
 public class Participante implements Observer {
-
+   
     Observable minicurso;
-    String estadoNovoMinicurso;
+    String estado;
 
     public Participante(Observable minicurso) {
         this.minicurso = minicurso;
@@ -24,9 +27,8 @@ public class Participante implements Observer {
     public void update(Observable minicursoState, Object arg1) {
         if (minicursoState instanceof Minicurso) {
             Minicurso minicurso = (Minicurso) minicursoState;
-            estadoNovoMinicurso = minicurso.getMinicursoEstado().getEstado();
-            estadoNovoMinicurso = " Atenção, o minicurso está ".concat(estadoNovoMinicurso);
-            ExibeMensagemObserver.setMensagem(estadoNovoMinicurso);
+            estado = minicurso.getMinicursoEstado().getEstado();
+            System.out.println("Atenção, estado alterado para " + estado);
         }
     }
     

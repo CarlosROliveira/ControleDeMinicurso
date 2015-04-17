@@ -4,6 +4,8 @@
     Author     : Admin
 --%>
 
+<%@page import="controller.ExibeMensagemTemplate"%>
+<%@page import="controller.ExibeMensagemObserver"%>
 <%@page import="controller.ExibeMensagem"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,7 +15,11 @@
         <title>Erro ao Trocar Estado</title>
     </head>
     <body>
-        <h1><%= ExibeMensagem.getMensagem()%></h1>
+        <h1><%= ExibeMensagem.getMensagem()%></h1><br>
+        <h1><%= ExibeMensagemObserver.getMensagem()%></h1>
+        
+        <h1><%= ExibeMensagemTemplate.getMensagem()%></h1>
+        
         <a href="frontcontroller?action=LerMiniCurso" >Voltar - Listar Minicursos</a>
     </body>
 </html>
