@@ -3,12 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/AlterarMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/observer/Participante.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/errotrocarestado.jsp</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/Organizador.java</file>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Boleto.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/listarMinicurso.jsp</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/OrganizadorInterino.java</file>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Promocao.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/ViceOrganizador.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/AlterarMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/GravarMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Boleto.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/StrategyFactory.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Promocao.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/adicionar.jsp</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/MinicursoAlteradoAction.java</file>
         </group>
     </open-files>
 </project-private>

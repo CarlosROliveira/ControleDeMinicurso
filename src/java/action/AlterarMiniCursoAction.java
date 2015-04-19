@@ -33,8 +33,7 @@ public class AlterarMiniCursoAction implements Action {
         
         try {
             MinicursoDAO.getInstance().update(id, minicursoEstadoNovo.getEstado());
-            response.sendRedirect("frontcontroller?action=LerMiniCurso");
-            Organizador.getFuncionario();
+            response.sendRedirect("frontcontroller?action=MinicursoAlterado");
         } catch (Exception ex) {
             ExibeMensagem.setMensagem(retornoTroca);
             response.sendRedirect("frontcontroller?action=ErroTrocarEstado");

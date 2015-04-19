@@ -3,11 +3,13 @@ package action;
 import controller.Action;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Minicurso;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import observer.Participante;
 import persistence.MinicursoDAO;
 
 /**
@@ -31,6 +33,9 @@ public class GravarMiniCursoAction implements Action {
         minicurso.setDuracao(duracao);
         minicurso.setValor(valor);
         minicurso.setVagasDisp(vagasDisp);
+        Participante participante = new Participante(minicurso);
+        ArrayList<Participante> participantes = new ArrayList<Participante>();
+        participantes.add(participante);
         
         try {
             MinicursoDAO.getInstance().save(minicurso);
