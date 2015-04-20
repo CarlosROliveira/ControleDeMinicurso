@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import observer.Participante;
 import persistence.MinicursoDAO;
 
 /**
@@ -25,6 +26,7 @@ public class CadastrarParticipanteAction implements Action{
     public void execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String formaPagamento = request.getParameter("forma");
+        Participante participante = new Participante(MinicursoDAO.getInstance().getMinicurso(id));
         
         ExibeStrategy.setFormaDePagamento(StrategyFactory.obtemFormaPagamento(formaPagamento));
   

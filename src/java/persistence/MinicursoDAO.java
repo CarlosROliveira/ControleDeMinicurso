@@ -60,6 +60,39 @@ public class MinicursoDAO {
        }
         return minicursos;
     }
+    
+     public Minicurso getMinicurso(int id){
+        
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Minicurso minicurso = new Minicurso();
+               
+       try {
+           conn = DatabaseLocator.getInstance().getConnection();
+           String sql = "Select minicurso where id ="+id;
+           ps = conn.prepareStatement(sql);
+           rs = ps.executeQuery();
+                          
+               
+               minicurso.setId(rs.getInt(1));
+               minicurso.setTitulo(rs.getString(2));
+               minicurso.setDataInicio(rs.getString(3));
+               minicurso.setDuracao(rs.getString(4));
+               minicurso.setValor(rs.getFloat(5));
+               
+               minicurso.setMinicursoEstado(MEstadoFactory.obtemEstado(rs.getString(6)));
+               
+               minicurso.setVagasDisp(rs.getInt(7));
+           
+           
+       } catch (SQLException ex) {
+           Logger.getLogger(MinicursoDAO.class.getName()).log(Level.SEVERE, null, ex);
+       } catch (ClassNotFoundException ex) {
+           Logger.getLogger(MinicursoDAO.class.getName()).log(Level.SEVERE, null, ex);
+       }
+        return minicurso;
+    }
      
     public void save (Minicurso minicurso) throws SQLException,ClassNotFoundException{
         Connection conn = null;

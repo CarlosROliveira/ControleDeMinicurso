@@ -2,7 +2,10 @@ package action;
 
 import controller.Action;
 import controller.ExibeMensagem;
+import controller.ExibeMensagemObserver;
+import controller.ExibeTemplate;
 import controller.MEstadoFactory;
+import controller.TemplateFactory;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -26,6 +29,10 @@ public class AlterarMiniCursoAction implements Action {
         int id = Integer.parseInt(request.getParameter("id"));
         String estadoAtual = request.getParameter("status");
         String estadoNovo = request.getParameter("estado");
+        String organizador = request.getParameter("organizador");
+                ExibeTemplate.setOrganizador(TemplateFactory.obtemFuncionario(organizador));
+        Minicurso minicurso = MinicursoDAO.getInstance().getMinicurso(id);
+
   
         MinicursoEstado minicursoEstado = MEstadoFactory.obtemEstado(estadoAtual);
         String retornoTroca = chamaMetodo(minicursoEstado, estadoNovo);
@@ -33,7 +40,9 @@ public class AlterarMiniCursoAction implements Action {
         
         try {
             MinicursoDAO.getInstance().update(id, minicursoEstadoNovo.getEstado());
-            response.sendRedirect("frontcontroller?action=MinicursoAlterado");
+            ExibeMensagem.setMensagem(retornoTroca);
+            minicurso.setMinicursoEstado(minicursoEstadoNovo);
+            response.sendRedirect("frontcontroller?action=ErroTrocarEstado");
         } catch (Exception ex) {
             ExibeMensagem.setMensagem(retornoTroca);
             response.sendRedirect("frontcontroller?action=ErroTrocarEstado");

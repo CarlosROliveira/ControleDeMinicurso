@@ -24,14 +24,14 @@
         
         <table border="1">
             <tr>
-                <td>ID</td>
-                <td>Titulo</td>
-                <td>Data de Inicio</td>
-                <td>Duração</td>
-                <td>Valor</td>
-                <td>Status</td>
-                <td>Vagas disponiveis</td>
-                <td>Opção</td>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Data de Inicio</th>
+                <th>Duração</th>
+                <th>Valor</th>
+                <th>Status</th>
+                <th>Vagas disponiveis</th>
+                <th colspan="2">Opções</th>
             </tr>
             <%
                 if (minicursos.size() > 0) {

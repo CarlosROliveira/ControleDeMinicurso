@@ -4,21 +4,21 @@
  */
 package template;
 
-import controller.ExibeMensagemTemplate;
+import java.util.Observable;
 
 
 /**
  *
  */
-public abstract class Organizador{
+public abstract class Organizador {
        
     
     public abstract String getCargo();
     
-    public void getFuncionario() {
-        ExibeMensagemTemplate.setMensagem("Alterado pelo " +getCargo());             
+    public String getFuncionario() {
+        
+        return "Alterado pelo " +getCargo();             
     }
-
     
     
     

@@ -17,7 +17,7 @@
         <style type="text/css">
             form fieldset{
                 width: 400px;
-                height:340px;
+                height:400px;
                 margin: 0 auto;
             }    
             form label{
@@ -58,6 +58,9 @@
                 <input type="radio" name="estado" value="disponibilizar">Disponibilizar  <br>
                 <input type="radio" name="estado" value="executar">Iniciar  <br>
                 <input type="radio" name="estado" value="fechar">Fechar  <br>
+                <label>Alterado por</label>
+                <input type="radio" name="organizador" value="OrganizadorInterino">Organizador  <br>
+                <input type="radio" name="organizador" value="ViceOrganizador" checked>Vice Organizador  <br><br>
                 <input type="submit" value="Mudar Estado" id="btn" onClick="getEstadoSelecionado()"/>
             </fieldset> 
         </form>

@@ -28,7 +28,7 @@ public class Participante implements Observer {
         if (minicursoState instanceof Minicurso) {
             Minicurso minicurso = (Minicurso) minicursoState;
             estado = minicurso.getMinicursoEstado().getEstado();
-            System.out.println("Atenção, estado alterado para " + estado);
+            System.out.println("Atenção, atual estado do minicurso: " + estado);
         }
     }
     

@@ -4,18 +4,39 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/observer/Participante.java</file>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/errotrocarestado.jsp</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/Organizador.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/ViceOrganizador.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/alterarEstado.jsp</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/adicionarparticipante.jsp</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/ExibeMensagemObserver.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/PromocaoCartao.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/FormaDePagamento.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/strategy.jsp</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/TemplateFactory.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/MEstadoFactory.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/ExibeTemplate.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/CadastrarParticipanteAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/StrategyAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/errotrocarestado.jsp</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/persistence/DatabaseLocator.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/FormularioMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/ActionFactory.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/listarMinicurso.jsp</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/OrganizadorInterino.java</file>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/template/ViceOrganizador.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/model/Minicurso.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/FormularioParticipanteAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/ErroTrocarEstadoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/PromocaoBoleto.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/ExibeStrategy.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/AlterarMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/persistence/MinicursoDAO.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/GravarMiniCursoAction.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Boleto.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/StrategyFactory.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/strategy/Promocao.java</file>
             <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/web/adicionar.jsp</file>
-            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/MinicursoAlteradoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/action/LerMiniCursoAction.java</file>
+            <file>file:/C:/Users/Gilson/Documents/GitHub/ControleDeMinicurso/src/java/controller/ExibeMensagem.java</file>
         </group>
     </open-files>
 </project-private>

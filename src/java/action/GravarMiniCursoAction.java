@@ -33,9 +33,6 @@ public class GravarMiniCursoAction implements Action {
         minicurso.setDuracao(duracao);
         minicurso.setValor(valor);
         minicurso.setVagasDisp(vagasDisp);
-        Participante participante = new Participante(minicurso);
-        ArrayList<Participante> participantes = new ArrayList<Participante>();
-        participantes.add(participante);
         
         try {
             MinicursoDAO.getInstance().save(minicurso);

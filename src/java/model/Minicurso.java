@@ -20,6 +20,7 @@ public class Minicurso extends Observable {
     
     public Minicurso() {
         this.minicursoEstado = new MinicursoDisponivel();
+
     }
 
     public int getId() {

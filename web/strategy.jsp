@@ -13,8 +13,8 @@
         <title>Strategy</title>
     </head>
     <body>
-        <h1><%= ExibeStrategy.getFormaDePagamento().getNome()+ " "+
-                ExibeStrategy.getFormaDePagamento().getPromocao() %></h1>
+        <h1><%= ExibeStrategy.getFormaDePagamento().getPromocao()+ ": Você acaba de ganhar um desconto de "+
+                ExibeStrategy.getFormaDePagamento().desconto()+"% na compra pelo "+ExibeStrategy.getFormaDePagamento().getNome()%></h1>
         <a href="frontcontroller?action=LerMiniCurso" >Voltar - Listar Minicursos</a>
     </body>
 </html>

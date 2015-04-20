@@ -13,7 +13,7 @@
         <style type="text/css">
             form fieldset{
                 width: 400px;
-                height:400px;
+                height:340px;
                 margin: 0 auto;
             }    
             form label{

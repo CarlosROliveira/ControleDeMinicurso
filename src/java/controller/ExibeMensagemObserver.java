@@ -5,11 +5,13 @@
  */
 package controller;
 
+import java.util.Observable;
+
 /**
  *
  * @author Admin
  */
-public class ExibeMensagemObserver {
+public class ExibeMensagemObserver extends Observable{
     
     private static String mensagem="";
     
@@ -18,6 +20,7 @@ public class ExibeMensagemObserver {
     }
     
     public static String getMensagem(){
+  
         return mensagem;
     }
     
